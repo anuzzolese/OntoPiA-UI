@@ -2,6 +2,7 @@
 This projects provides the following facilities for enhancing user experience with the ontologies and the controlled vocabularies of OntoPiA:
  - Virtuoso as SPARQL enpoint;
  - LODE for visualising ontologies as HTML;
+ - WebVOWL for visualising ontologies with the Visual Notation for OWL Ontologies (VOWL);
  - LodView for browsing ontology entities as well as controlloed vocabularies entities.
 
 ### Build and run
@@ -19,7 +20,8 @@ $> docker-compose up
 Once the containers are up and assuming that `localhost` is the reference host, users can access:
  - the SPARQL endpoint at http://localhost:8890/sparql;
  - LODE at http://localhost:9090/lode;
- - LODE at http://localhost:8080/lodview.
+ - WebVOWL at http://localhost:8080/webvowl
+ - LodView at http://localhost:8080/lodview.
 
 ### Examples
 The following is an example of SPARQL SELECT query that returns all the classes defined in the ontology network of OntoPiA.
@@ -32,5 +34,7 @@ WHERE {
 ```
 
 The resource http://localhost:8080/lodview/onto/CPV/Person can be used to visualise the HTML representation of the class Person for the CPV (core person) ontology.
+
+The resource http://localhost:8080/webvowl/#iri=https://w3id.org/italia/onto/CPV can be used to visualise the CPV (core person) ontology with the VOWL notation.
 
 The resource http://localhost:9090/lode/extract?url=https://w3id.org/italia/onto/CPV can be used to visualise the CPV (core person) ontology as HTML.
