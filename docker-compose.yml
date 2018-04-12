@@ -1,0 +1,17 @@
+version: '2'
+services:
+  virtuoso:
+    build: ./virtuoso
+    environment:
+      SPARQL_UPDATE: "true"
+      DEFAULT_GRAPH: "https://w3id.org/italia/onto"
+    ports:
+      - "8890:8890"
+  lode:
+    build: ./lode
+    ports:
+      - "9090:8080"
+  lodview:
+    build: ./lodview
+    ports:
+      - "8080:8080"
