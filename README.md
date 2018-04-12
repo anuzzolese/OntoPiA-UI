@@ -33,4 +33,4 @@ WHERE {
 
 The resource http://localhost:8080/lodview/onto/CPV/Person can be used to visualise the HTML representation of the class Person for the CPV (core person) ontology.
 
-The resource http://localhost:9090/lode/https://w3id.org/italia/onto/CPV can be used to visualise the CPV (core person) ontology as HTML.
+The resource http://localhost:9090/lode/extract?url=https://w3id.org/italia/onto/CPV can be used to visualise the CPV (core person) ontology as HTML.
