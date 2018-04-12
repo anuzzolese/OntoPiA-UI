@@ -4,7 +4,6 @@ services:
     build: ./virtuoso
     environment:
       SPARQL_UPDATE: "true"
-      DEFAULT_GRAPH: "https://w3id.org/italia/onto"
     ports:
       - "8890:8890"
   lode:
